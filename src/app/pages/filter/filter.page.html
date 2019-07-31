@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label slot="end">Budget</ion-label>
+          <ion-select value="Budget" okText="Okay" cancelText="Dismiss" slot="end" [(ngModel)]="budget">
+            <ion-select-option value="1">Under $500</ion-select-option>
+            <ion-select-option value="2">Under $700</ion-select-option>
+            <ion-select-option value="3">Under $1000</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    
+    
+      <ion-list>
+        <ion-item>
+          <ion-label slot="end">Category</ion-label>
+          <ion-select value="Category" okText="Okay" cancelText="Dismiss" slot="end" [(ngModel)]="category">
+            <ion-select-option value="1">Camera</ion-select-option>
+            <ion-select-option value="2">Performance</ion-select-option>
+            <ion-select-option value="3">Water-resistant</ion-select-option>
+            <ion-select-option value="4">Battery</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-button (click)="filterSearch()" class="button" color="primary">
+        Search
+      </ion-button>
+
+</ion-content>

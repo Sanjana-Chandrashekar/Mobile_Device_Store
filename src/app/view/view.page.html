@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{pageTitle}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+  <ion-card class="card" class="custom2">
+    <ion-card-header>
+      <ion-card-title>{{title1}}</ion-card-title>
+      <ion-card-subtitle>{{subtitle1}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="image">
+      <div class="custom">
+          <img src="{{requirements1}}" alt="">
+      </div>
+     
+      <br />
+      <ion-button fill="outline" size="small" [routerLink]="'/form/'+ 1">
+        View
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="title2" class="custom2">
+    <ion-card-header>
+      <ion-card-title>{{title2}}</ion-card-title>
+      <ion-card-subtitle>{{subtitle2}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="image">
+      <div class="custom">
+          <img src="{{requirements2}}" alt="">
+      </div>
+      <br />
+      <ion-button fill="outline" size="small" [routerLink]="'/form/'+ 2">
+        View
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="title3" class="custom2">
+    <ion-card-header>
+      <ion-card-title>{{title3}}</ion-card-title>
+      <ion-card-subtitle>{{subtitle3}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="image">
+     <div class="custom">
+        <img src="{{requirements3}}" alt="" >
+     </div>
+      <br />
+      <ion-button fill="outline" size="small" [routerLink]="'/form/'+ 3">
+        View
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
